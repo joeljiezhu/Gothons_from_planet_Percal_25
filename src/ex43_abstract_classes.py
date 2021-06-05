@@ -12,6 +12,7 @@ class Engine(object):
         pass
 
     def play(self):
+        print('A game start')
         pass
 
 class Death(Scene):
