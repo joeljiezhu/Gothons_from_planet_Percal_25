@@ -2,7 +2,7 @@
 
 from textwrap import dedent
 from random import randint
-from . import Scene
+from . import scene
 
 class LaserWeaponArmory(Scene):
 

@@ -1,5 +1,5 @@
 # src/TheBridge.py
-from . import Scene
+from . import scene
 from util import dd
 
 class TheBridge(Scene):

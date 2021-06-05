@@ -2,7 +2,7 @@
 
 from sys import exit
 from random import randint
-from . import Scene
+from . import scene
 
 class Death(Scene):
     quips = [
