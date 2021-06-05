@@ -3,7 +3,7 @@
 from random import randint
 # our lib
 from util import dd
-import Scene
+from . import Scene
 
 class EscapePod(Scene):
 

@@ -1,12 +1,13 @@
 # src/ex43.py
 
 # import from our own code
-import Scene
-import Death
-import CentralCorridor
-import LaserWeaponArmory
-import TheBridge
-import EscapePod
+
+from . import CentralCorridor
+from . import LaserWeaponArmory
+from . import TheBridge
+from . import EscapePod
+from . import Finished
+from . import Death
 
 class Engine(object):
 
@@ -26,11 +27,6 @@ class Engine(object):
 
 
 
-class Finished(Scene):
-
-    def enter(self):
-        print("You wont! Good job.")
-        return 'finished'
 
 # finally
 
