@@ -2,6 +2,7 @@
 
 from sys import exit
 from random import randint
+import Scene
 
 class Death(Scene):
     quips = [
@@ -14,6 +15,6 @@ class Death(Scene):
 
 
     def enter(self):
-        # @NOTE why is the first call is static? 
+        # @NOTE why is the first call is static?
         print(Death.quips[randint(0, len(self.quips) - 1)])
         exixt(1)

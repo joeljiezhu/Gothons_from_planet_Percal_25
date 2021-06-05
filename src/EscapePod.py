@@ -3,7 +3,7 @@
 from random import randint
 # our lib
 from util import dd
-
+import Scene
 
 class EscapePod(Scene):
 
@@ -40,5 +40,3 @@ class EscapePod(Scene):
         time. You won!
         """)
         return 'finished'
-
-        

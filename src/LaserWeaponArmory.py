@@ -2,6 +2,7 @@
 
 from textwrap import dedent
 from random import randint
+import Scene
 
 class LaserWeaponArmory(Scene):
 
@@ -42,6 +43,3 @@ class LaserWeaponArmory(Scene):
                 Gothons blow up the ship from their ship and you die.
                 """))
             return 'death'
-
-
-    

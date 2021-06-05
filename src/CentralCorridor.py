@@ -1,6 +1,6 @@
 # src/CentralCorridor.py
 from textwrap import dedent
-
+import Scene
 
 class CentralCorridor(Scene):
 

@@ -1,5 +1,5 @@
 # src/TheBridge.py
-
+import Scene
 from util import dd
 
 class TheBridge(Scene):
@@ -42,5 +42,3 @@ class TheBridge(Scene):
         else:
             print("DOES NOT COMPUTE!")
             return 'the_bridge'
-
-        
