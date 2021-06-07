@@ -2,12 +2,12 @@
 
 # import from our own code
 
-from . import central_corridor
-from . import laser_weapon_armory
-from . import the_bridge
-from . import escape_pod
-from . import finished
-from . import death
+from .central_corridor import CentralCorridor
+from .laser_weapon_armory import LaserWeaponArmory
+from .the_bridge import TheBridge
+from .escape_pod import EscapePod
+from .finished import Finished
+from .death import Death 
 
 class Engine(object):
 

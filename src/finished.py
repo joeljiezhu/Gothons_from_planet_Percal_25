@@ -1,6 +1,6 @@
 
 
-from . import scene
+from .scene import Scene
 
 class Finished(Scene):
 

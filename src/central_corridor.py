@@ -1,11 +1,12 @@
 # src/CentralCorridor.py
-from textwrap import dedent
-from . import scene
+
+from .util import dd
+from .scene import Scene
 
 class CentralCorridor(Scene):
 
     def enter(self):
-        print(dedent("""
+        dd("""
             The Gothons of Planet Percal #25 have invaded your ship and
             destroyed your entire crew. You are the last surviving
             member and your last mission is to get the neutron destruct
@@ -17,12 +18,12 @@ class CentralCorridor(Scene):
             teeth, and evil clown costume flowing around his hate
             filled body. He's blocking the door to the Armory and
             about to pull a weapon to blast you.
-            """))
+            """)
 
         action = input("> ")
 
         if (action == "shoot!"):
-            print(dedent("""
+            dd("""
                 Quick on the darw you yank out your blaster and fire
                 it at the Gothon. His clown costume is flowing and
                 moving around his body, which throws off your aim.
@@ -31,22 +32,22 @@ class CentralCorridor(Scene):
                 brought him, which makes him fly into an insane rage
                 and blast you repeatedly in the face until you are
                 dead. Then he eats you.
-                """))
+                """)
             return 'death'
 
         elif action == "dodge!":
-            print(dedent("""
+            dd("""
                 Like a world class boxer you dodge, weave, slip and
                 slide right as the Gothon's blaster cranks a laser
                 past your head. In the middle of your artful dodge
                 your foot slips and you bang your head on the metal
                 wall and pass out. You wake up shortly after only to
                 die as the Gothon stomps on your head and eats you.
-                """))
+                """)
             return 'death'
 
         elif action == "tell a joke":
-            print(dedent("""
+            dd("""
                 Lucky for you they made you learn Gothon insults in
                 the academy. You tell the one Gothon joke you know:
                 Lbhe zbgure vf fb sng jura fur fvgf nebhaq gur ubhfr,
@@ -55,7 +56,7 @@ class CentralCorridor(Scene):
                 While he's laughing you run up and shoot him square in
                 the head putting him down, then jump through the
                 Weapon Armory door.
-                """))
+                """)
             return 'laser_weapon_armory'
 
         else:

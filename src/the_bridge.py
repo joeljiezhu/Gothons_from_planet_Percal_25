@@ -1,6 +1,6 @@
 # src/TheBridge.py
-from . import scene
-from util import dd
+from .scene import Scene
+from .util import dd
 
 class TheBridge(Scene):
 
@@ -12,7 +12,7 @@ class TheBridge(Scene):
         clown costume than the last. They haven't pulled their
         weapons out yet, as they see the active bomb under your
         arm and don't want to set it off.
-        """))
+        """)
 
         action = input("> ")
 
